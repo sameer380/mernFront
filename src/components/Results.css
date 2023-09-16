@@ -1,0 +1,66 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+  @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Bebas+Neue&family=Bricolage+Grotesque:opsz@10..48&family=Heebo:wght@700&family=Inter:wght@600&family=Limelight&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500&family=Tinos&family=Varela&family=Varela+Round&display=swap');
+
+
+/* body{overflow: hidden;} */
+ .card1{background-color: white;
+    width: 500px;
+    margin:40px ;
+}
+.cards_container{ 
+    
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; 
+     
+}
+.cards1{
+  
+    height: 100%;
+    transform: translate(80px,-100px);
+    align-items: center;
+    justify-items: center;
+    z-index: 1000;
+    display: flex;
+
+align-items: center;
+
+}
+.card1:hover{
+
+    box-shadow: 2px 2px 22px 2px rgba(0, 0, 0, 0.212);
+    transform: translate(12px,12px);
+    transition: 0.2s ease-in-out;
+}
+
+.card1 h3{  
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    font-family: "tinos";
+    text-align: center;
+    background-color: rgb(97, 24, 24);
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    border-bottom: 2px solid black;
+}
+.watermark {
+    background-color: white;
+  position: fixed;
+  /* top: 260px; */
+  left: 600px;
+  width: 600px;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0; 
+  opacity: 0.1; 
+  background-image: url('https://pbsiddhartha.ac.in/assets/images/logo-sm.png');
+  background-size: cover;
+  background-position: center;
+}
