@@ -70,15 +70,18 @@ const passRegex = /^21\d{4}[pP]$/;
 
 
 
-	const url = "http://localhost:5000";
+	const url = "https://pbscbackend23.onrender.com";
 
     try {
-		const response = await axios.post("http://localhost:5000/register", {
-			firstName: firstName,
-			lastName: lastName,
-			email: email,
-			password: password,
-		});
+		const response = await axios.post(
+			"https://pbscbackend23.onrender.com/register",
+			{
+				firstName: firstName,
+				lastName: lastName,
+				email: email,
+				password: password,
+			}
+		);
 
 
       if (response.data.error) {
